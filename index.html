@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>This is going to be lit!</h1>
-        <div class="container">
-            <a href="http://bit.ly/cssanimatedbutton" target="_blank">
-                <div class="button">
-                    <span>Sun</span>
-                </div>
-                <div class="sun"></div>
-            </a>
+
+<head>
+    <title>Portofolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Oswald';
+            background-color: #00d2f72c;
+            margin: 20px;
+            margin-top: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-5 {
+            width: 75%;
+        }
+
+        #hello {
+            font-size: 100px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        #myPic {
+            margin-top: 10px;
+        }
+
+        #mydes {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-9">
+            <h1 id="hello">Hello World!</h1>
+            <h3 class="col-5" id="mydes">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque vestibulum blandit. Mauris
+                lacinia lorem ante, sed laoreet dolor laoreet non. Integer ut dignissim tellus, in iaculis magna. Fusce
+                orci ex, pharetra at sapien vel, gravida lacinia est.
+            </h3>
         </div>
-        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="chaneli-s-7bb162162" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://se.linkedin.com/in/chaneli-s-7bb162162?trk=profile-badge">Chaneli S.</a></div>
-    </body>
+        <div class="col-3" id="myPic">
+            <img src="./images/CvPicture BW.png" width="200" height="200">
+        </div>
+    </div>
+</body>
+
 </html>
