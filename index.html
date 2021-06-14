@@ -1,15 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>This is going to be lit!</h1>
-        <div class="container">
-            <a href="http://bit.ly/cssanimatedbutton" target="_blank">
-                <div class="button">
-                    <span>Sun</span>
-                </div>
-                <div class="sun"></div>
-            </a>
+
+<head>
+    <title>Portofolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Oswald';
+            background-color: #ffffff;
+            margin: 20px;
+            margin-top: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-5 {
+            width: 75%;
+        }
+
+        #hello {
+            font-size: 100px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        #myPic {
+            margin-top: 10px;
+        }
+
+        #mydes {
+            text-align: center;
+        }
+
+        p{
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-9">
+            <h1 id="hello">Hello World!</h1>
+            <h3 class="col-5" id="mydes">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque vestibulum blandit. Mauris
+                lacinia lorem ante, sed laoreet dolor laoreet non. Integer ut dignissim tellus, in iaculis magna. Fusce
+                orci ex, pharetra at sapien vel, gravida lacinia est.
+            </h3>
         </div>
-        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="chaneli-s-7bb162162" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://se.linkedin.com/in/chaneli-s-7bb162162?trk=profile-badge">Chaneli S.</a></div>
-    </body>
+        <div class="col-3" id="myPic">
+            <img src="./images/CvPicture BW.png" width="200" height="200">
+        </div>
+    </div>
+    <div>
+        <h3 style="text-align: center;">Here are some of the projects I have collaborated/I've been working on.<br> Feel free to browse and
+            contact me
+            if
+            there's anything!</h3>
+    </div>
+    <h2>Mini-project: Trailgage - Smart car</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xZhSSO3LWiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p> Ut sit amet sem lectus. Aenean eu arcu varius, efficitur dui sed, imperdiet nisi. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Maecenas a tortor et velit pretium bibendum. Praesent sodales, eros non eleifend
+        fermentum, ligula ante congue turpis, vel imperdiet leo eros eu arcu. Etiam placerat augue sem, non luctus ex
+        pulvinar quis. In eleifend justo lacus, eget imperdiet sem hendrerit quis. Nulla leo purus, viverra sed mauris
+        vitae, suscipit varius nisi. Nam id lacinia felis, non semper eros. Cras rhoncus ante est, et blandit sapien
+        sagittis sed. Nulla sagittis, leo ut venenatis sollicitudin, libero velit blandit leo, in egestas sem velit ac
+        nibh.</p>
+    <h2>Mini-project: EventNode - Event planner</h2>
+    <p> Ut sit amet sem lectus. Aenean eu arcu varius, efficitur dui sed, imperdiet nisi. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Maecenas a tortor et velit pretium bibendum. Praesent sodales, eros non eleifend
+        fermentum, ligula ante congue turpis, vel imperdiet leo eros eu arcu. Etiam placerat augue sem, non luctus ex
+        pulvinar quis. In eleifend justo lacus, eget imperdiet sem hendrerit quis. Nulla leo purus, viverra sed mauris
+        vitae, suscipit varius nisi. Nam id lacinia felis, non semper eros. Cras rhoncus ante est, et blandit sapien
+        sagittis sed. Nulla sagittis, leo ut venenatis sollicitudin, libero velit blandit leo, in egestas sem velit ac
+        nibh.</p>
+    <h2>Mini-project: Dentistimo - Dental clinic system</h2>
+    <p> Ut sit amet sem lectus. Aenean eu arcu varius, efficitur dui sed, imperdiet nisi. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Maecenas a tortor et velit pretium bibendum. Praesent sodales, eros non eleifend
+        fermentum, ligula ante congue turpis, vel imperdiet leo eros eu arcu. Etiam placerat augue sem, non luctus ex
+        pulvinar quis. In eleifend justo lacus, eget imperdiet sem hendrerit quis. Nulla leo purus, viverra sed mauris
+        vitae, suscipit varius nisi. Nam id lacinia felis, non semper eros. Cras rhoncus ante est, et blandit sapien
+        sagittis sed. Nulla sagittis, leo ut venenatis sollicitudin, libero velit blandit leo, in egestas sem velit ac
+        nibh.</p>
+    <h2>Project: Steering wheel angle computer</h2>
+    <p> Ut sit amet sem lectus. Aenean eu arcu varius, efficitur dui sed, imperdiet nisi. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Maecenas a tortor et velit pretium bibendum. Praesent sodales, eros non eleifend
+        fermentum, ligula ante congue turpis, vel imperdiet leo eros eu arcu. Etiam placerat augue sem, non luctus ex
+        pulvinar quis. In eleifend justo lacus, eget imperdiet sem hendrerit quis. Nulla leo purus, viverra sed mauris
+        vitae, suscipit varius nisi. Nam id lacinia felis, non semper eros. Cras rhoncus ante est, et blandit sapien
+        sagittis sed. Nulla sagittis, leo ut venenatis sollicitudin, libero velit blandit leo, in egestas sem velit ac
+        nibh.</p>
+</body>
+
 </html>
