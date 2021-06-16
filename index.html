@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Chaneli</title>
+    <title>Portofolio Chaneli</title>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <style>
         body {
@@ -62,26 +62,33 @@
             margin: 20px;
         }
 
-        .gitHubButton {
-            background-color: white;
+        .profileLinkButton {
+            background-color: transparent;
             color: black;
-            border: 1px solid #000000;
-            border-radius: 25px;
-            margin-left: 10px;
-            margin-bottom: 40px;
             height: 32px;
             width: 125px;
             font-family: 'Oswald';
+            border: 1px solid #000000;
+            border-radius: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
         }
 
-        .gitHubButton:hover {
+        .profileLinkButton:hover {
             background-color: black;
             color: white;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 
-<body>
+<body style="background-image: url(./images/background.png); background-repeat: no-repeat; ">
     <div class="row">
         <div class="col-9">
             <h1 id="hello">Hello World!</h1>
@@ -96,31 +103,26 @@
         </div>
     </div>
     <div>
-        <div class="col-3">
-            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer
-                type="text/javascript"></script>
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
-                data-type="VERTICAL" data-vanity="chaneli-s-7bb162162" data-version="v1"><a
-                    class="badge-base__link LI-simple-link"
-                    href="https://se.linkedin.com/in/chaneli-s-7bb162162?trk=profile-badge"></a></div>
+        <div class="col-3" style="width: 300px; backdrop-filter: blur(2px); border-radius: 50px;">
+            <img src="./images/linkedIn/linkedInLogo.png" style="margin-top: 15px;" class="center"><br><br>
+            <img src="./images/linkedIn/linkedInProfile.png" alt="LinkedInAvatar" class="center">
+            <p style="font-weight: bold; text-align: center;">Chaneli S.</p>
+            <button class="button profileLinkButton"
+                onclick="window.location.href='https://www.linkedin.com/in/chaneli-s-7bb162162/';"
+                style="  display: flex; justify-content: center; align-items: center;">
+                View LinkedIn profile</button>
         </div>
-        <div class="col-3" style="width: 350px;">
-            <div
-                style="background-color:lightgrey; height: 55px; margin-left: 40px; border-top-left-radius: 5px; border-top-right-radius: 5px;">
-                <img src="./images/gitHub/gitHubLogo&Name.png"
-                    style="height: 25px; margin-left: 15px; margin-top: 15px;"><br><br>
-                <img src="./images/gitHub/gitHubAvatar.png" alt="GitHubAvatar"
-                    style="height: 60px; margin-left: 20px;"><br><br>
-                <p style="margin-left: 10px; font-weight: bold;">chaneli</p><br>
-                <button class="button gitHubButton" onclick="window.location.href='https://github.com/chaneli';">
-                    View GitHub profile</button><br>
-            </div>
+        <div class="col-3" style="width: 300px; backdrop-filter: blur(2px); border-radius: 50px;">
+            <img src="./images/gitHub/gitHubLogo&Name.png" style="margin-top: 15px;" class="center"><br><br>
+            <img src="./images/gitHub/gitHubAvatar.png" alt="GitHubAvatar" class="center">
+            <p style="font-weight: bold; text-align: center;">chaneli</p>
+            <button class="button profileLinkButton" onclick="window.location.href='https://github.com/chaneli';"
+                style="  display: flex; justify-content: center; align-items: center;">
+                View GitHub profile</button>
         </div>
     </div>
-    <div>
-        <h3 style="text-align: center; margin-top: 400px;">Here are some of the projects I have collaborated/I've been
-            working on.<br> Feel free to browse and contact me if there's anything!</h3>
-    </div>
+    <h3 style="text-align: center; margin-top: 375px; margin-bottom: 100px;">Here are some of the projects I have
+        collaborated/I've been working on.<br> Feel free to browse and contact me if there's anything!</h3>
     <h2>Mini-project: Trailgage - Smart car</h2>
     <div class="row">
         <div class="col-6">
