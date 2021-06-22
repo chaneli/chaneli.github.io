@@ -63,12 +63,20 @@
         }
 
         #profileBadge {
-            width: 300px;
+            width: 20%;
             padding: 5px;
             margin-left: 80px;
             backdrop-filter: blur(2px);
             border-radius: 50px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: transform .2s;
+        }
+
+        #profileBadge:hover {
+            -ms-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            backdrop-filter: none;
         }
 
         .profileLinkButton {
@@ -108,7 +116,7 @@
             </h3>
         </div>
         <div class="col-3" id="myPic">
-            <img src="./images/CvPicture BW.png" width="200" height="200">
+            <img src="./images/CvPicture BW.png" alt="MyPhoto" width="200" height="200">
         </div>
     </div>
     <div style="margin-top: 30px;">
@@ -142,13 +150,13 @@
                     allowfullscreen></iframe>
             </div>
             <div style="text-align: center;">
-                <img src="./images/trailGage/trailGageInAction.png" alt="Trailgage" class="trailGageImg"
+                <img src="./images/trailGage/trailGageInAction.png" alt="trailGageInAction" class="trailGageImg"
                     style="margin-left: 30px; margin-top: 50px;">
-                <img src="./images/trailGage/trailGageConnection.png" alt="Joystick" class="trailGageImg"
+                <img src="./images/trailGage/trailGageConnection.png" alt="trailGageConnection" class="trailGageImg"
                     style="height:200px; margin-left: 15px;">
                 <img src="./images/trailGage/joystick.png" alt="Joystick" class="trailGageImg"
                     style="height:200px; margin-left: 15px;">
-                <img src="./images/trailGage/joystickFront.png" alt="Joystick" style="height:200px; margin-left: 15px;">
+                <img src="./images/trailGage/joystickFront.png" alt="JoystickInAction" style="height:200px; margin-left: 15px;">
             </div>
         </div>
         <div class="col-6">
