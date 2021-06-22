@@ -62,6 +62,23 @@
             margin: 20px;
         }
 
+        #profileBadge {
+            width: 20%;
+            padding: 5px;
+            margin-left: 80px;
+            backdrop-filter: blur(2px);
+            border-radius: 50px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: transform .2s;
+        }
+
+        #profileBadge:hover {
+            -ms-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            backdrop-filter: none;
+        }
+
         .profileLinkButton {
             background-color: transparent;
             color: black;
@@ -93,17 +110,17 @@
         <div class="col-9">
             <h1 id="hello">Hello World!</h1>
             <h3 class="col-5" id="mydes">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque vestibulum blandit. Mauris
-                lacinia lorem ante, sed laoreet dolor laoreet non. Integer ut dignissim tellus, in iaculis magna. Fusce
-                orci ex, pharetra at sapien vel, gravida lacinia est.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque vestibulum blandit.
+                Mauris lacinia lorem ante, sed laoreet dolor laoreet non. Integer ut dignissim tellus, in iaculis magna.
+                Fusce orci ex, pharetra at sapien vel, gravida lacinia est.
             </h3>
         </div>
         <div class="col-3" id="myPic">
-            <img src="./images/CvPicture BW.png" width="200" height="200">
+            <img src="./images/CvPicture BW.png" alt="MyPhoto" width="200" height="200">
         </div>
     </div>
-    <div>
-        <div class="col-3" style="width: 300px; backdrop-filter: blur(2px); border-radius: 50px;">
+    <div style="margin-top: 30px;">
+        <div class="col-3" id="profileBadge">
             <img src="./images/linkedIn/linkedInLogo.png" style="margin-top: 15px;" class="center"><br><br>
             <img src="./images/linkedIn/linkedInProfile.png" alt="LinkedInAvatar" class="center">
             <p style="font-weight: bold; text-align: center;">Chaneli S.</p>
@@ -112,7 +129,7 @@
                 style="  display: flex; justify-content: center; align-items: center;">
                 View LinkedIn profile</button>
         </div>
-        <div class="col-3" style="width: 300px; backdrop-filter: blur(2px); border-radius: 50px;">
+        <div class="col-3" id="profileBadge">
             <img src="./images/gitHub/gitHubLogo&Name.png" style="margin-top: 15px;" class="center"><br><br>
             <img src="./images/gitHub/gitHubAvatar.png" alt="GitHubAvatar" class="center">
             <p style="font-weight: bold; text-align: center;">chaneli</p>
@@ -121,7 +138,7 @@
                 View GitHub profile</button>
         </div>
     </div>
-    <h3 style="text-align: center; margin-top: 375px; margin-bottom: 100px;">Here are some of the projects I have
+    <h3 style="text-align: center; margin-top: 400px; margin-bottom: 100px;">Here are some of the projects I have
         collaborated/I've been working on.<br> Feel free to browse and contact me if there's anything!</h3>
     <h2>Mini-project: Trailgage - Smart car</h2>
     <div class="row">
@@ -133,13 +150,13 @@
                     allowfullscreen></iframe>
             </div>
             <div style="text-align: center;">
-                <img src="./images/trailGage/trailGageInAction.png" alt="Trailgage" class="trailGageImg"
+                <img src="./images/trailGage/trailGageInAction.png" alt="trailGageInAction" class="trailGageImg"
                     style="margin-left: 30px; margin-top: 50px;">
-                <img src="./images/trailGage/trailGageConnection.png" alt="Joystick" class="trailGageImg"
+                <img src="./images/trailGage/trailGageConnection.png" alt="trailGageConnection" class="trailGageImg"
                     style="height:200px; margin-left: 15px;">
                 <img src="./images/trailGage/joystick.png" alt="Joystick" class="trailGageImg"
                     style="height:200px; margin-left: 15px;">
-                <img src="./images/trailGage/joystickFront.png" alt="Joystick" style="height:200px; margin-left: 15px;">
+                <img src="./images/trailGage/joystickFront.png" alt="JoystickInAction" style="height:200px; margin-left: 15px;">
             </div>
         </div>
         <div class="col-6">
