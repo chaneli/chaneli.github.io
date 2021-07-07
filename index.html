@@ -3,10 +3,11 @@
 
 <head>
     <title>Portofolio Chaneli</title>
-    <link href='https://fonts.googleapis.com/css?family=M PLUS Rounded 1c' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Uchen&display=swap"
+        rel="stylesheet">
     <style>
         body {
-            font-family: 'M PLUS Rounded 1c';
+            font-family: 'Uchen', serif;
             background-color: #ffffff;
             margin: 20px;
             margin-top: 10px;
@@ -52,6 +53,7 @@
 
         #myPic {
             margin-top: 10px;
+            text-align: center;
         }
 
         #mydes {
@@ -88,7 +90,8 @@
             color: black;
             height: 32px;
             width: 125px;
-            font-family: 'Oswald';
+            font-family: 'Uchen', serif;
+            font-size: 14px;
             border: 1px solid #000000;
             border-radius: 25px;
             margin-left: auto;
@@ -106,6 +109,51 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .trailgageSlides,
+        .eventnodeSlides,
+        .dentistimoSlides,
+        .swaSlides {
+            display: none
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: auto;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            background-color: rgb(209, 229, 255);
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a grey background color */
+        .prev:hover,
+        .next:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
     </style>
 </head>
 
@@ -114,9 +162,10 @@
         <div class="col-9">
             <h1 id="hello">Hello World!</h1>
             <h3 class="col-5" id="mydes">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque vestibulum blandit.
-                Mauris lacinia lorem ante, sed laoreet dolor laoreet non. Integer ut dignissim tellus, in iaculis magna.
-                Fusce orci ex, pharetra at sapien vel, gravida lacinia est.
+                I am Kumarapatabendige Chaneli Anupama Silva but you can call me Chaneli. I’m currently studying at
+                University of Gothenburg for my bachelor’s studies ‘Software Engineering and Management’. I’m quite
+                passionate about small things that make a huge difference and it is one of the reasons I have chosen
+                this field.
             </h3>
         </div>
         <div class="col-3" id="myPic">
@@ -131,7 +180,7 @@
             <button class="button profileLinkButton"
                 onclick="window.location.href='https://www.linkedin.com/in/chaneli-s-7bb162162/';"
                 style="  display: flex; justify-content: center; align-items: center;">
-                View LinkedIn profile</button>
+                View profile</button>
         </div>
         <div class="col-3" id="profileBadge">
             <img src="./images/gitHub/gitHubLogo&Name.png" style="margin-top: 15px;" class="center"><br><br>
@@ -139,21 +188,34 @@
             <p style="font-weight: bold; text-align: center;">chaneli</p>
             <button class="button profileLinkButton" onclick="window.location.href='https://github.com/chaneli';"
                 style="  display: flex; justify-content: center; align-items: center;">
-                View GitHub profile</button>
+                View profile</button>
         </div>
     </div>
     <h3 style="text-align: center; margin-top: 400px; margin-bottom: 100px;">Here are some of the projects I have
-        collaborated/I've been working on.<br> Feel free to browse and contact me if there's anything!</h3>
+        collaborated/I've been working on.<br> Feel free to browse and contact me at <span
+            style="font-style: italic;">chanelisilva04@gmail.com </span> if there's anything!</h3>
     <h2>Mini-project: Trailgage - Smart car</h2>
     <div class="row">
         <div class="col-6">
             <div style="text-align: center; margin-top: 50px;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xZhSSO3LWiM"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <img src="./images/trailGage/trailGageInAction.png" alt="trailGageInAction" class="trailGageImg"
-                    style="margin-top: 50px;">
+            </div>
+            <div class="slideshow-container">
+                <div class="trailgageSlides" style="text-align: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xZhSSO3LWiM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="trailgageSlides" style="text-align: center;">
+                    <!-- <img src="./images/trailGage/"> -->
+                </div>
+
+                <div class="trailgageSlides" style="text-align: center;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
             </div>
         </div>
         <div class="col-6">
@@ -167,17 +229,8 @@
                 GitHub : <a href="https://github.com/chaneli/group-11">TrailGage</a><br>
                 Technologies used : Arduino, Android, C++
             </p>
-            <br><br><br><br><br>
-            <div style="text-align: center;">
-                <img src="./images/trailGage/trailGageConnection.png" alt="trailGageConnection" class="trailGageImg"
-                    style="height:200px; margin-left: 15px; margin-right: 15px;">
-                <img src="./images/trailGage/joystick.png" alt="Joystick" class="trailGageImg"
-                    style="height:200px; margin-left: 15px; margin-right: 15px;">
-                <img src="./images/trailGage/joystickFront.png" alt="JoystickInAction"
-                    style="height:200px; margin-left: 15px; margin-right: 15px;">
-            </div>
         </div>
-    </div>
+    </div><br><br><br>
     <h2>Mini-project: EventNode - Event planner</h2>
     <div class="row">
         <div class="col-6">
@@ -187,11 +240,39 @@
                 the event before and after an event has occurred. <br><br>
                 Technologies used : Vue, Bootstrap, Express, Node</p>
         </div>
-        <div class="col-6"></div>
-    </div>
+        <div class="col-6">
+            <div class="slideshow-container">
+                <div class="eventnodeSlides" style="text-align: center;">
+                </div>
+
+                <div class="eventnodeSlides" style="text-align: center;">
+                </div>
+
+                <div class="eventnodeSlides" style="text-align: center;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+        </div>
+    </div><br><br><br>
     <h2>Mini-project: Dentistimo - Dental clinic system</h2>
     <div class="row">
-        <div class="col-6"></div>
+        <div class="col-6">
+            <div class="slideshow-container">
+                <div class="dentistimoSlides" style="text-align: center;">
+                </div>
+
+                <div class="dentistimoSlides" style="text-align: center;">
+                </div>
+
+                <div class="dentistimoSlides" style="text-align: center;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+            </div>
+        </div>
         <div class="col-6">
             <p class="description"> The Dentistimo is a distributed system which allows Dental clinics to post available
                 time slots so that the users can reserve a time slot for their appointment. If a dental clinic has free
@@ -199,7 +280,7 @@
                 Technologies used : MQTT, Vue, MongoDB
             </p>
         </div>
-    </div>
+    </div><br><br><br>
     <h2>Project: Steering wheel angle computer</h2>
     <div class="row">
         <div class="col-6">
@@ -208,8 +289,45 @@
                 cones in order to compute the steering wheel angle.<br><br>
                 Technologies used : OpenCV, CMake, Docker</p>
         </div>
-        <div class="col-6"></div>
-    </div>
+        <div class="col-6">
+            <div class="slideshow-container">
+                <div class="swaSlides" style="text-align: center;">
+                </div>
+
+                <div class="swaSlides" style="text-align: center;">
+                </div>
+
+                <div class="swaSlides" style="text-align: center;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+            </div>
+        </div>
+    </div><br><br><br>
+    <script>
+        var slideIndex = [1, 1, 1, 1];
+        var slideId = ["trailgageSlides", "eventnodeSlides", "dentistimoSlides", "swaSlides"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+        showSlides(1, 3);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
